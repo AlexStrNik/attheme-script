@@ -1,0 +1,55 @@
+{
+    "name": "attheme-script",
+    "displayName": "attheme-script",
+    "description": "",
+    "version": "0.0.2",
+    "publisher": "AlexStrNik",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:attheme-script"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "attheme-script",
+                "configuration": "./syntaxes/attheme-config.json",
+                "aliases": [
+                    "attheme-script"
+                ],
+                "extensions": [
+                    ".attheme-script"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "attheme-script",
+                "scopeName": "source.attheme",
+                "path": "./syntaxes/attheme.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode-languageclient": "^3.3.0",
+        "vscode-languageserver": "^3.4.2",
+        "vscode": "^1.1.6",
+        "eslint": "^4.6.1",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "attheme-default-values": "^4.8.1-0",
+        "spdlog": "^0.6.0"
+    }
+}
