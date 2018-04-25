@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": ".attheme script",
+	"patterns": [
+		{
+			"name": "comment.line.number-sign",
+			"begin": "#\\s",
+			"end": "\n"
+		},
+		{
+			"name": "keyword.control",
+			"match": "^\\s*(else if|if|else|for|import|apply)\\s"
+		},
+		{
+			"name": "keyword.operator",
+			"match": "\\s(in|is|not|as|\\>|\\<|\\<=\\|\\>=)"
+		},
+		{
+			"name": "string.quoted.double",
+			"match": "\".*\"(?!\\\\)"
+		},
+		{
+			"name": "constant.numeric",
+			"match": "(#[\\da-fA-F]{8}|#[\\da-fA-F]{6}|#[\\da-fA-F]{3,4}|\\d*\\.\\d+%|\\d+%|\\d*\\.\\d+|\\d+)(?=[\\d,\\s\\)])"
+		},
+		{
+			"name": "entity.name.tag",
+			"match": "[A-Za-z\\d_]+(?=:)"
+		},
+		{
+			"name": "constant.other",
+			"match": "[^\\.\\w](black|silver|gray|white|maroon|red|purple|fuchsia|green|lime|olive|yellow|navy|blue|teal|aqua|orange|aliceblue|antiquewhite|aquamarine|azure|beige|bisque|blanchedalmond|blueviolet|brown|burlywood|cadetblue|chartreuse|chocolate|coral|cornflowerblue|cornsilk|crimson|cyan|aqua|darkblue|darkcyan|darkgoldenrod|darkgray|darkgreen|darkgrey|darkkhaki|darkmagenta|darkolivegreen|darkorange|darkorchid|darkred|darksalmon|darkseagreen|darkslateblue|darkslategray|darkslategrey|darkturquoise|darkviolet|deeppink|deepskyblue|dimgray|dimgrey|dodgerblue|firebrick|floralwhite|forestgreen|gainsboro|ghostwhite|gold|goldenrod|greenyellow|grey|honeydew|hotpink|indianred|indigo|ivory|khaki|lavender|lavenderblush|lawngreen|lemonchiffon|lightblue|lightcoral|lightcyan|lightgoldenrodyellow|lightgray|lightgreen|lightgrey|lightpink|lightsalmon|lightseagreen|lightskyblue|lightslategray|lightslategrey|lightsteelblue|lightyellow|limegreen|linen|magenta|fuchsia|mediumaquamarine|mediumblue|mediumorchid|mediumpurple|mediumseagreen|mediumslateblue|mediumspringgreen|mediumturquoise|mediumvioletred|midnightblue|mintcream|mistyrose|moccasin|navajowhite|oldlace|olivedrab|orangered|orchid|palegoldenrod|palegreen|paleturquoise|palevioletred|papayawhip|peachpuff|peru|pink|plum|powderblue|rosybrown|royalblue|saddlebrown|salmon|sandybrown|seagreen|seashell|sienna|skyblue|slateblue|slategray|slategrey|snow|springgreen|steelblue|tan|thistle|tomato|turquoise|violet|wheat|whitesmoke|yellowgreen|rebeccapurple)(?=[\\n,\\)\\s\\.])"
+		},
+		{
+			"name": "variable.language",
+			"match": "[^\\.\\(](variables|arguments|theme)(?=[\\n,\\)\\s\\.])"
+		}
+	],
+	"scopeName": "source.attheme-script"
+}

@@ -18,7 +18,7 @@
         "languages": [
             {
                 "id": "attheme-script",
-                "configuration": "./syntaxes/attheme-config.json",
+                "configuration": "./syntaxes/attheme-script-config.json",
                 "aliases": [
                     "attheme-script"
                 ],
@@ -30,8 +30,8 @@
         "grammars": [
             {
                 "language": "attheme-script",
-                "scopeName": "source.attheme",
-                "path": "./syntaxes/attheme.tmLanguage.json"
+                "scopeName": "source.attheme-script",
+                "path": "./syntaxes/attheme-script.tmLanguage.json"
             }
         ]
     },
